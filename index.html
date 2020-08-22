@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FreqViz | Frequency Visualizer</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="perlin.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="style/player.css">
+</head>
+
+<body>
+                  
+    <div class="container">
+        <div class="track">
+                <p id="songname">Select a song <span id="artist">:-<span></p>
+        </div>
+        <div style="padding-top: 5px;">
+                <button data-am-button="small" id="btn-mute"><i class="fa fa-volume-off"></i></button>
+                <button data-am-button="small" id="btn-previous"><i class="fa fa-step-backward"></i></button>
+                <button data-am-button="small" id="btn-play-pause"><i class="fa fa-play"></i></button>
+                <button data-am-button="small" id="btn-next"><i class="	fa fa-step-forward"></i></button>
+                <button data-am-button="small" id="btn-stop"><i class="fa fa-stop"></i></button>
+                <input type="file" id="thefile" accept="audio/*" multiple/>	
+        </div>
+        
+        <div id="progress-bar"><span id="progress"></span></div>	
+    </div>	
+    <canvas id="renderer"></canvas>
+    <!-- <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/jQBpXJiJJlY?autoplay=1" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+       
+</body>
+<script type="text/javascript" src="script2.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+</html>
